@@ -8,7 +8,7 @@
     "heroku-postbuild": "babel src --out-dir dist --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "env-cmd ./config/dev.env nodemon src/index.js --ext js,graphql --exec babel-node",
-    "start": "env-cmd ./config/production.env node dist/index.js"
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
