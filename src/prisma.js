@@ -5,7 +5,7 @@ const prisma = new Prisma({
     fragmentReplacements,
     typeDefs: 'src/generated/prisma.graphql',
     endpoint: process.env.PRISMA_ENDPOINT,
-    secret: 'thissecret',
+    secret: process.env.PRISMA_SECRET,
 })
 
 export { prisma as default }
